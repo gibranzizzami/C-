@@ -1,4 +1,3 @@
-// made folder
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <iostream>
@@ -12,5 +11,6 @@ int main() {
 
     // made file
      std::ofstream file("contoh.txt");
-    return 0;
+     cout << "file berhasil dibuat";
+     return 0;
 }
