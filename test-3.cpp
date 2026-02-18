@@ -1,3 +1,4 @@
+// hapus folder dan file
 #include <iostream>
 #include <filesystem>
 

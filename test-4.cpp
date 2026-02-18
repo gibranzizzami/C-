@@ -1,9 +1,12 @@
 #include <iostream>
-#include <string>
+#include <vector>
 using namespace std;
 
 int main() {
-    string greeting = "hello world!";
-    cout << greeting;
+    vector<string> greetings ={"hello", "world"}; 
+
+    for (string greeting : greetings) {
+        cout << greeting << "/n";
+    }
     return 0;
 }
