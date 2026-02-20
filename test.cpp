@@ -92,16 +92,16 @@ int main() {
             fs::path destination_path(destination_path_str);
 
             if (!fs::exists(source_path) || !fs::is_regular_file(source_path)) {
-                std::cerr << "Error: Source file does not exist or is not a regular file." << std::endl;
+                std::cerr << "Error: File tidak ditemukan" << std::endl;
             } else {
                 fs::copy(source_path, destination_path, fs::copy_options::overwrite_existing);
-                std::cout << "File copied successfully!" << std::endl;
+                std::cout << "File berhasil dicopy!" << std::endl;
             }
 
         } catch (const fs::filesystem_error& e) {
             std::cerr << "Filesystem error: " << e.what() << std::endl;
         } catch (const std::exception& e) {
-            std::cerr << "An unexpected error occurred: " << e.what() << std::endl;
+            std::cerr << "Terjadi kesalahan: " << e.what() << std::endl;
         }
     }
 
