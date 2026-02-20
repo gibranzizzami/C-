@@ -12,6 +12,7 @@ int main() {
     // Buat File 
     {
         std::ofstream file("test.md");
+        std::cout << "file berhasil dibuat";
     }
 
     // Hapus Folder 
@@ -81,9 +82,9 @@ int main() {
     {
         std::string source_path_str, destination_path_str;
 
-        std::cout << "Enter the source file path: ";
+        std::cout << "Masukkan file sumber: ";
         std::cin >> source_path_str;
-        std::cout << "Enter the destination file path: ";
+        std::cout << "Masukkan file tujuan: ";
         std::cin >> destination_path_str;
 
         try {
